@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import Card from '@mui/material/Card';
 import Typography from '@mui/material/Typography';
 import { CardActions } from '@mui/material';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import CardMedia from '@mui/material/CardMedia';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
@@ -69,8 +69,8 @@ export const BtnContainer = styled(CardActions)`
   justify-content: space-between;
   padding: 20px;
 `;
-//________
-export const BtnDetails = styled.div`
+
+export const BtnDetails = styled(Link)`
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;

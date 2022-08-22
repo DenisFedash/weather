@@ -4,12 +4,12 @@ import { App } from 'components/App';
 import './index.css';
 import { store } from 'redux/store';
 import { Provider } from 'react-redux';
-// import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <BrowserRouter basename="/weather/"></BrowserRouter>
-
   <Provider store={store}>
-    <App />
+    <BrowserRouter basename="/weather/">
+      <App />
+    </BrowserRouter>
   </Provider>
 );
