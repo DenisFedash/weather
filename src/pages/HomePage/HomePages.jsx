@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWeather } from '../../redux/apiWeather';
 
-export const HomePage = () => {
+export default function HomePage() {
   const dispatch = useDispatch();
   const { cityNames, cities, loading } = useSelector(({ weather }) => weather);
 
@@ -30,4 +30,4 @@ export const HomePage = () => {
       )}
     </>
   );
-};
+}

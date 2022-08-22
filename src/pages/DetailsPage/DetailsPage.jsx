@@ -1,9 +1,9 @@
 import { WeatherDetails } from 'components/Details/WeatherDetails';
 
-export const DetailsPage = () => {
+export default function DetailsPage() {
   return (
     <>
       <WeatherDetails />
     </>
   );
-};
+}
