@@ -7,6 +7,7 @@ import { DetailsPage } from 'pages/DetailsPage/DetailsPage';
 export const App = () => {
   return (
     <>
+      <h1>Hello</h1>
       <HomePage />
       <DetailsPage />
       {/* <Routes>
