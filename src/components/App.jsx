@@ -5,11 +5,15 @@ import PageNotFound from 'pages/PageNotFound/PageNotFound';
 import DetailsPage from 'pages/DetailsPage/DetailsPage';
 import HomePage from 'pages/HomePage/HomePages';
 import { Loader } from './Loader/Loader';
+import { Header } from './Header/Header';
+import { CardList } from './Cardlist/CardList';
 
 export const App = () => {
   return (
     <>
       <Loader />
+      <Header />
+      <CardList />
 
       <Routes>
         <Route path="/*" element={<HomePage />} />
