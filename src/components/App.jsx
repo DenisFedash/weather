@@ -4,11 +4,12 @@ import PageNotFound from 'pages/PageNotFound/PageNotFound';
 
 import DetailsPage from 'pages/DetailsPage/DetailsPage';
 import HomePage from 'pages/HomePage/HomePages';
+import { Loader } from './Loader/Loader';
 
 export const App = () => {
   return (
     <>
-      <h1>Hello</h1>
+      <Loader />
 
       <Routes>
         <Route path="/*" element={<HomePage />} />

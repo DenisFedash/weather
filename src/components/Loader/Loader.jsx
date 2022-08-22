@@ -3,7 +3,7 @@ import { BallTriangle } from 'react-loader-spinner';
 export const Loader = () => (
   <BallTriangle
     type="BallTriangle"
-    color="var(--violet)"
+    color="violet"
     height={100}
     width={100}
     visible={true}
