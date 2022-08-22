@@ -3,9 +3,8 @@ import { saveCityName } from '../utils/selcteCity';
 import { CITIES } from '../constants';
 
 const initialState = {
-  cityNames: [],
+  cityNames: ['Kyiv'],
   cities: [],
-  // loading: false,
   selectCityName: '',
   currentCity: null,
   hourlyWeather: null,
@@ -28,7 +27,6 @@ export const weatherSlice = createSlice({
         : localStorage.setItem(CITIES, JSON.stringify(action.payload));
     },
     getWeather: (state, action) => {
-      // state.loading = true;
       state.cities.push(action.payload);
     },
     deleteCity: (state, action) => {
