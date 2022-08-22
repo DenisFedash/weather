@@ -20,14 +20,16 @@ export default function HomePage() {
   }, [dispatch, cityNames]);
   return (
     <>
-      {!loading ? (
+      <Header />
+      <CardList cities={cities} />
+      {/* {!loading ? (
         <Loader />
       ) : (
         <>
           <Header />
           <CardList cities={cities} />
         </>
-      )}
+      )} */}
     </>
   );
 }
