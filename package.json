@@ -1,8 +1,8 @@
 {
   "name": "react-homework-template",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://DenisFedash.github.io/weather/",
+  "private": false,
+  "homepage": "https://DenisFedash.github.io/weather",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
