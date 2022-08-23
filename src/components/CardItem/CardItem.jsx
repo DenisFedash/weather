@@ -1,8 +1,7 @@
 import CardContent from '@mui/material/CardContent';
-
 import { useDispatch } from 'react-redux';
 import { deleteCity, getSelectCityName } from 'redux/weatherSlice';
-
+import PropTypes from 'prop-types';
 import { ButtonUpd } from 'components/ButtonUpd/ButtonUpd';
 import {
   AboutContainer,
@@ -75,4 +74,17 @@ export const CardItem = ({ city }) => {
       </BtnContainer>
     </CardWeather>
   );
+};
+
+CardItem.propTypes = {
+  CardItem: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      weather: PropTypes.string.isRequired,
+      speed: PropTypes.string.isRequired,
+      humidity: PropTypes.string.isRequired,
+      feels_like: PropTypes.string.isRequired,
+    })
+  ),
 };

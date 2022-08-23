@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { fetchHourlyWeather, updateWeatherAction } from 'redux/apiWeather';
 import { BtnUpd } from './ButtonUpd.styled';
+import PropTypes from 'prop-types';
 
 export const ButtonUpd = ({ cityName, textButton, coord }) => {
   const dispatch = useDispatch();
@@ -19,4 +20,10 @@ export const ButtonUpd = ({ cityName, textButton, coord }) => {
       <BtnUpd />
     </div>
   );
+};
+
+ButtonUpd.propTypes = {
+  cityName: PropTypes.string,
+  textButton: PropTypes.string,
+  coord: PropTypes.number,
 };
